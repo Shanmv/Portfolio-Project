@@ -41,7 +41,8 @@ h3 {
   right: 100px;
 }
 .work-link {
-  margin: 130px;
+  margin: 130px auto;
+  width: fit-content;
 }
 .primary-link {
   padding: 20px 30px;
@@ -55,11 +56,20 @@ h3 {
 }
 
 .primary-link:hover {
-  border: 2px solid #885df1;
+  border: 2px solid var(--branding-color);
   background: var(--secondary-color);
   color: var(--branding-color);
 }
 
+.divider {
+  border-bottom: 10px dotted #f5f1fe;
+  margin: 60px auto;
+}
+
+
+.headings {
+  font-size: 38px;
+}
 @media (max-width: 768px) {
   header {
     padding-bottom: 100px;
@@ -73,7 +83,7 @@ h3 {
     line-height: 44px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 38px;
   }
   h3 {
     font-size: 16px;
@@ -84,14 +94,22 @@ h3 {
   .switch2 {
     order: 1;
   }
+  .myWork {
+  border: 1px solid var(--branding-color);
+  width:fit-content;
+  margin: auto;
+  padding: 20px;
+}
   .headings {
     margin-top: 20px;
     text-align: center !important;
+    font-size: 32px;
   }
   .launch {
     display: block;
     text-align: center;
   }
+
   .weather {
     margin-top: 5px;
   }
@@ -101,4 +119,5 @@ h3 {
   .about-paragraphs p {
     font-size: 16px;
   }
+ 
 }
