@@ -128,6 +128,19 @@ footer {
 .to-top:hover:before {
   transform: rotate(360deg);
 }
+.womanCoder {
+  display: block;
+  margin-top: -40px;
+  max-width: 600px;
+}
+.attribution {
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+}
+.attribution:hover {
+  color: black;
+}
 @media (max-width: 768px) {
   header {
     padding-bottom: 150px;
