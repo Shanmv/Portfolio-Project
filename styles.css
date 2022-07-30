@@ -42,8 +42,8 @@ h3 {
   background-color: var(--tertiary-color);
 }
 .offcanvas {
-  background-color: var(--tertiary-color);
-  backdrop-filter: blur(20px);
+  background-color: var(--secondary-color);
+  width: 200px;
 }
 
 .active {
@@ -95,6 +95,39 @@ footer {
 .githubIcon:hover {
   font-size: 32px;
 }
+.to-top {
+  color: var(--secondary-color);
+  padding-top: 1.8em;
+  position: relative;
+
+  bottom: 15%;
+  left: 90%;
+  border-color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.8s ease-out;
+}
+.to-top:before {
+  content: "▲";
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+
+  border: solid 2px var(--secondary-color);
+  border-radius: 20px;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
+}
+.to-top:hover {
+  color: palevioletred;
+  border-color: palevioletred;
+}
+.to-top:hover:before {
+  transform: rotate(360deg);
+}
 @media (max-width: 768px) {
   header {
     padding-bottom: 150px;
@@ -120,7 +153,6 @@ footer {
     order: 1;
   }
   .myWork {
-    border: 1px solid var(--branding-color);
     width: fit-content;
     margin: auto;
     padding: 20px;
