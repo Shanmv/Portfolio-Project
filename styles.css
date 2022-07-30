@@ -1,6 +1,7 @@
 :root {
-  --branding-color: #885df1;
+  --branding-color: #aa0055;
   --secondary-color: whitesmoke;
+  --tertiary-color: #e7d7c1cc;
   --box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   --font-main: "Arima", cursive;
   --font-heading: "Lora", serif;
@@ -9,12 +10,13 @@
 body {
   margin: 0 auto;
   font-family: var(--font-main);
+  background-color: var(--tertiary-color);
 }
 
 header {
   background: var(--branding-color);
   color: var(--secondary-color);
-  padding-bottom: 200px;
+  padding-bottom: 250px;
 }
 .intro {
   position: relative;
@@ -29,16 +31,23 @@ h1 {
 h2 {
   font-size: 48px;
 }
+h2.myWork {
+  font-family: var(--font-heading);
+}
 h3 {
   font-size: 24px;
   opacity: 0.8;
 }
-.navbar-brand {
-  font-family: "Niconne", cursive;
+.navbar {
+  background-color: var(--tertiary-color);
 }
-.navbar-nav {
-  position: fixed;
-  right: 100px;
+.offcanvas {
+  background-color: var(--tertiary-color);
+  backdrop-filter: blur(20px);
+}
+
+.active {
+  color: var(--branding-color) !important;
 }
 .work-link {
   margin: 130px auto;
@@ -62,20 +71,37 @@ h3 {
 }
 
 .divider {
-  border-bottom: 10px dotted #f5f1fe;
+  border-bottom: 8px dotted #a78a7f;
+
   margin: 60px auto;
 }
 
 .headings {
   font-size: 38px;
 }
+
+footer {
+  font-family: var(--font-heading);
+  background-color: var(--branding-color);
+  padding: 12px;
+  color: var(--secondary-color);
+}
+.githubIcon {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 5px;
+  color: var(--secondary-color);
+}
+.githubIcon:hover {
+  font-size: 32px;
+}
 @media (max-width: 768px) {
   header {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
   .intro {
     position: relative;
-    top: 50px;
+    top: 100px;
   }
   h1 {
     font-size: 40px;
@@ -105,9 +131,8 @@ h3 {
     font-size: 32px;
   }
   .launch {
-    display:flex;
+    display: flex;
     justify-content: center;
-    
   }
 
   .weather {
