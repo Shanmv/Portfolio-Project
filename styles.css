@@ -131,7 +131,7 @@ footer {
 .womanCoder {
   display: block;
   margin-top: -40px;
-  max-width: 600px;
+  width: 600px;
 }
 .attribution {
   font-size: 10px;
@@ -140,6 +140,29 @@ footer {
 }
 .attribution:hover {
   color: black;
+}
+.connect {
+  background-color: var(--branding-color);
+  color: var(--secondary-color);
+  padding: 20px 100px;
+}
+.form-control,
+.message {
+  background-color: var(--secondary-color);
+}
+.contact {
+  padding: 10px 20px;
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  background: var(--secondary-color);
+  color: var(--branding-color);
+  box-shadow: var(--box-shadow);
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+.contact:hover {
+  background: var(--tertiary-color);
+  
 }
 @media (max-width: 768px) {
   header {
