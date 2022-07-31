@@ -96,6 +96,7 @@ footer {
 }
 .githubIcon:hover {
   font-size: 32px;
+  margin-bottom: 3px;
 }
 .to-top {
   color: var(--secondary-color);
