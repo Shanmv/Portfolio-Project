@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="front-end web development portfolio" />
     <title>Shanice Valentine | Front-end Developer</title>
     <link
@@ -46,7 +47,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="body">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
@@ -69,12 +70,12 @@
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav text-center fw-bold">
-              <a class="nav-link  mx-3" aria-current="page" href="index.html"
+              <a class="nav-link  mainLink mx-3" aria-current="page" href="index.html"
                 >Home</a
               >
-              <a class="nav-link mx-3" href="index.html#work">My Work</a>
-              <a class="nav-link mx-3 active" href="about.html">About</a>
-              <a class="nav-link mx-3" href="about.html#connect">Contact</a>
+              <a class="nav-link mx-3 portfolioLink" href="index.html#work">My Work</a>
+              <a class="nav-link mx-3  active aboutLink" href="about.html">About</a>
+              <a class="nav-link mx-3 contactLink" href="about.html#connect">Contact</a>
             </div>
           </div>
         </div>
@@ -118,7 +119,7 @@
                   <br />
                   <textarea
                       name="yourMessage"
-                      class="message"
+                      class="message "
                       cols="40"
                       rows="10"
                       placeholder="leave a message"
@@ -138,4 +139,5 @@
     <a href="https://github.com/Shanmv/Portfolio-Project" target="_blank"><i class="fa-brands fa-github githubIcon"></i></a> <div class="credit">Built by Shanice Valentine</div> 
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
