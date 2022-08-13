@@ -23,20 +23,20 @@ function handleNavBar() {
 let showNavBar = document.querySelector(".body");
 showNavBar.addEventListener("click", handleNavBar);
 
-function handleNavLink1() {
-  switchActive1.classList.add("active");
-  removeActive1.classList.remove("active");
+function handleWorkLink() {
+  switchActiveWork.classList.add("active");
+  removeActiveWork.classList.remove("active");
 }
 
-let switchActive1 = document.querySelector(".portfolioLink");
-let removeActive1 = document.querySelector(".mainLink");
-switchActive1.addEventListener("click", handleNavLink1);
+let switchActiveWork = document.querySelector(".portfolioLink");
+let removeActiveWork = document.querySelector(".mainLink");
+switchActiveWork.addEventListener("click", handleWorkLink);
 
-function handleNavLink2() {
-  switchActive2.classList.add("active");
-  removeActive2.classList.remove("active");
+function handleContactLink() {
+  switchActiveContact.classList.add("active");
+  removeActiveContact.classList.remove("active");
 }
 
-let switchActive2 = document.querySelector(".contactLink");
-let removeActive2 = document.querySelector(".aboutLink");
-switchActive2.addEventListener("click", handleNavLink2);
+let switchActiveContact = document.querySelector(".contactLink");
+let removeActiveContact = document.querySelector(".aboutLink");
+switchActiveContact.addEventListener("click", handleContactLink);
