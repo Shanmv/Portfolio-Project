@@ -1,3 +1,11 @@
+function handleLoader() {
+  window.setTimeout(function () {
+    loadScreen.style.display = "none";
+  }, 1000);
+}
+let loadScreen = document.querySelector(".loader");
+window.addEventListener("load", handleLoader);
+
 let showOnPx = 100;
 let backToTopButton = document.querySelector(".to-top");
 let hideNavBar = document.querySelector(".navbar");

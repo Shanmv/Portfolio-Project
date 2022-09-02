@@ -7,6 +7,21 @@
   --font-heading: "Lora", serif;
 }
 
+.loader {
+  background: var(--branding-color);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-icon {
+  width: 60px;
+  height: 60px;
+}
+
 body {
   margin: 0 auto;
   font-family: var(--font-main);
@@ -84,7 +99,6 @@ h3 {
 
 .divider {
   border-bottom: 8px dotted #a78a7f;
-
   margin: 60px auto;
 }
 
@@ -192,6 +206,7 @@ footer {
   header {
     padding-bottom: 150px;
   }
+
   .intro {
     position: relative;
     top: 100px;
